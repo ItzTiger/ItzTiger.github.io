@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>Tiger's Scratch Game</title>
+    <style>
+        body {
+          font-family: sans-serif;
+          background-color: white;
+        }
+
+        .accordion {
+          border-radius: 6px;
+          border: 1px solid grey;
+          width: 950px;
+          background-color: #CBCBC9;
+          color: black;
+          cursor: pointer;
+          padding: 18px;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+          background-color: rgb(217, 217, 217);
+        }
+        
+        .panel {
+          border: 1px solid grey;
+          padding: 0 18px;
+          width: 912px;
+          display: none;
+          background-color: rgb(217, 217, 217);
+          overflow: hidden;
+        }
+      </style>
+      <!-- Embed Title -->
+  <meta property="og:title" content="Tiger's Scratch Games!">
+  <!-- Embed Description -->
+  <meta property="og:description" content="The scratch games of Tiger!">
+  <!-- Meta Data Keywords -->
+  <meta name="keywords" content="tiger,tigers,scratch,scratchers,tigerscratch,scratch,tiger_scratch,scratch_tiger" />
+  <!-- Meta Data Description -->
+  <meta name = "description" content = "The scratch games of Tiger!" />
+  <!-- Website Author -->
+  <meta name="author" content="Tiger (https://ItzTiger.github.io/)" />
+</head>
+<body>
+    <h1 style="text-align: center;">My Scratch Games!</h1>
+
+    <hr>
+    <button class="accordion">Dodge The Bricks</button>
+    <div class="panel">
+    <p><a href="https://scratch.mit.edu/projects/908413293" style="color: #F1A521;">Scratch Link</a></p>
+    <p>Instructions:<br>
+    Don't Let The Your Cursor Touch The Bricks!</p>
+    <p>Embed:</p>
+    <iframe src="https://scratch.mit.edu/projects/908413293/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+    <button class="accordion">Click The Rainbow Cats</button>
+    <div class="panel">
+    <p><a href="https://scratch.mit.edu/projects/956328691" style="color: #F1A521;">Scratch Link</a></p>
+    <p>Instructions:<br>
+    Story: The cats are really bored and they all found a potion that makes them hyper active and rainbow coloured!!!<br>
+    And now this happened...<br>
+    <br>
+    Click the rainbow cats to play!!!</p>
+    <p>Embed:</p>
+    <iframe src="https://scratch.mit.edu/projects/956328691/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+    <button class="accordion">Click The Ball</button>
+    <div class="panel">
+    <p><a href="https://scratch.mit.edu/projects/922628367" style="color: #F1A521;">Scratch Link</a></p>
+    <p>Instructions:<br>
+    Just Click The Ball</p>
+    <p>Embed:</p>
+    <iframe src="https://scratch.mit.edu/projects/922628367/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+    <button class="accordion">Talk To Flappy</button>
+    <div class="panel">
+    <p><a href="https://scratch.mit.edu/projects/939929047" style="color: #F1A521;">Scratch Link</a></p>
+    <p>Instructions:<br>
+    Talk To Flappy!</p>
+    <p>Embed:</p>
+    <iframe src="https://scratch.mit.edu/projects/939929047/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+     </script>
+</body>
